@@ -62,8 +62,70 @@ header{
 
 nav{
   text-align: center;
-  height: 30px;
+  height: 40px;
   background-color: #CEBAAF;
+}
+
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 8px 0;
+    list-style: none;
+    text-align: center;
+
+}
+
+#menu-deroulant li {
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+
+}
+#menu-deroulant ul li {
+    display: inherit;
+    border-radius: 0;
+}
+#menu-deroulant ul li:hover {
+    border-radius: 0;
+}
+#menu-deroulant ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+#menu-deroulant ul {
+    position: absolute;
+		vertical-align: middle;
+    z-index: 100;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+#menu-deroulant li:hover ul {
+    max-height: 20em;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+		color: #fff;
+    font-family: arial;
+}
+#menu-deroulant ul a {
+    padding: 8px 0;
+}
+#menu-deroulant li:hover li a {
+    color: #fff;
+    text-transform: inherit;
+}
+#menu-deroulant li li:hover a {
+    color: #E6154D
+;
+}
+#menu-deroulant li:hover a {
+    color: #333;
 }
 
 h1{
@@ -126,4 +188,12 @@ margin-top: 20px;
 #contact{
 	text-align: right;
 	margin-bottom: 10px;
+}
+
+.diapo{
+	height: 300px;
+}
+
+.diapo li{
+	width: 800px;
 }
