@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Jquery Pratique</title>
+  <link rel="stylesheet" href="pratjq.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://jq.creativejuiz.fr/plugins/juiz-dropdown-menu/scripts/jquery-juizDDM.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="imgHeader">
+        <h1>MON SUPER SITE</h1>
+        <img src="img/logo.png"></img>
+
+    <div id="rs">
+        <img src="img/tw.png"></img>
+        <img src="img/fb.png"></img>
+        <img src="img/mail.png"></img>
+    </div>
+    </div>
+  </header>
+
+<nav>
+    <ul id="menu-deroulant" >
+        <li><a href="#">menu 1</a>
+          <ul id="menu1">
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+          </ul>
+        </li>
+        <li><a href="#">menu 2</a>
+        <ul id="menu2">
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+          </ul>
+          <li><a href="#">menu 3</a>
+            <ul id="menu3">
+              <li><a href="#">lien sous menu 1</a></li>
+              <li><a href="#">lien sous menu 1</a></li>
+              <li><a href="#">lien sous menu 1</a></li>
+              <li><a href="#">lien sous menu 1</a></li>
+            </ul>
+          </li>
+          <li><a href="#">menu 4</a>
+          <ul id="menu4">
+              <li><a href="#">lien sous menu 1</a></li>
+              <li><a href="#">lien sous menu 1</a></li>
+              <li><a href="#">lien sous menu 1</a></li>
+              <li><a href="#">lien sous menu 1</a></li>
+            </ul>
+      </ul>
+</nav>
+
+<div class="diapo">
+	<ul>
+		<li><img src="img1.jpg" alt="" width="350" height="200" /></li>
+		<li><img src="img2.jpg" alt="" width="350" height="200" /></li>
+		<li><img src="img3.jpg" alt="" width="350" height="200" /></li>
+	</ul>
+</div>
+
+  <footer>
+    <div id="menuFooter">
+      <ul>
+        <li><a href="#">lien1</a></li>
+        <li><a href="#">lien2</a></li>
+        <li><a href="#">lien3</a></li>
+        <li><a href="#">lien4</a></li>
+        <li><a href="#">lien5</a></li>
+      </ul>
+    </div>
+    <div id="copyright">
+        <p class="centre">Copyright @Julie - réalisé le ..</p>
+    </div>
+    <div id="contact">
+        <p class="droite">Mail: michelet.julie@yahoo.fr</p>
+    </div>
+  </footer>
+
+<script>
+	$(document).ready(function() {
+		$("#menu-deroulant").juizDropDownMenu();
+	});
+
+
+</script>
+</body>
+</html>
